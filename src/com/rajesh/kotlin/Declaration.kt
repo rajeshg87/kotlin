@@ -1,4 +1,4 @@
-package com.rajesh.sample
+package com.rajesh.kotlin
 
 typealias UserSet = Set<User>
 

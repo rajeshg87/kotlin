@@ -1,4 +1,4 @@
-package com.rajesh.sample
+package com.rajesh.kotlin
 
 fun main(args: Array<String>){
     val emp1 = Employee("Rajesh", 100)
@@ -15,12 +15,19 @@ fun main(args: Array<String>){
 
     val car3 = car.copy(model = "Accord")
     println(car3)
+
+    val cars = arrayOf(car, car2, car3)
+    printCarModels(*cars)
 }
 
 //class Employee constructor(name: String, id: Int){
 //    val name: String = name
 //    val id: Int = id
 //}
+
+fun printCarModels(vararg cars: Car){
+    cars.forEach { car -> println(car.model) }
+}
 
 class Employee constructor(val name: String, val id: Int){
 

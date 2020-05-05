@@ -1,4 +1,4 @@
-package com.rajesh.sample
+package com.rajesh.kotlin
 
 fun main(args: Array<String>){
     val str: String? = null
