@@ -17,7 +17,7 @@ fun main(args: Array<String>){
         index, s -> println("${index+1} = $s")
     }
 
-    str?.replace(" ", "").forEachIndexed{
-        index, c -> println("${index+1} = $c")
+    str?.replace(" ", "").toUpperCase().forEachIndexed{
+        index, c -> println("${index+1} = $c (${c.toInt() - 64})")
     }
 }
