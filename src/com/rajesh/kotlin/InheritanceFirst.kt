@@ -1,7 +1,7 @@
 package com.rajesh.kotlin
 
 fun main(args: Array<String>){
-    val printer = InkJetPrinter("HP Desktop", 30.50)
+    val printer = InkJetPrinter("HP Desktop", 25.30)
     printer.printerPrice();
 }
 
