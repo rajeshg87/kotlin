@@ -8,7 +8,9 @@ fun main(args: Array<String>){
     println(convertNumber("20a") ?: throw CustomException("Given value is not in Number Format"))
 }
 
-class CustomException(message: String) : Exception(message)
+class CustomException(message: String) : Exception(message){
+
+}
 
 fun convertNumber(str: String): Int? {
     return try {

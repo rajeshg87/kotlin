@@ -20,4 +20,8 @@ fun main(args: Array<String>){
     str?.replace(" ", "").toUpperCase().forEachIndexed{
         index, c -> println("${index+1} = $c (${c.toInt() - 64})")
     }
+
+    for(i in 0 until 5){
+        println(i)
+    }
 }
